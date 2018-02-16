@@ -1,0 +1,4 @@
+lxml==3.4.2
+pyyaml==3.11
+jsonpatch==1.14
+jsonpath-rw==1.4.0
