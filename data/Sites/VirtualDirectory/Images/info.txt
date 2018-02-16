@@ -1,0 +1,8 @@
+By default, Geocortex Essentials ships with a library of images that can be used as layer and basemap icons in your
+applications. By storing these images in this Virtual Directory, they can be used and shared by any site you create.
+
+This Virtual Directory can be accessed via HTTP, the URL to it can be resolved using the following replacement token
+in your Site.xml configuration files: {RestVirtualDirectory}.
+
+For example, you can configure the layer icon attribute of a "Facilities" layer to the value:
+"{RestVirtualDirectory}/Images/Icons/Layers/facilities-32.png".

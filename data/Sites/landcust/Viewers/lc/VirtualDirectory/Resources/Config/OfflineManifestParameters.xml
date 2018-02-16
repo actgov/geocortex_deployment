@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ManifestParameters>
+  <ParameterList>
+    <!-- A placeholder for base URL -->
+    <Parameter Name="BaseUrlPlaceHolder">{BaseUrl}</Parameter>
+    <Parameter Name="VirtualDirectoryUrlPlaceHolder">{VirtualDirectoryUrl}</Parameter>
+    
+    <!-- An address for a blank tile to bounce an unsupported routing -->
+    <Parameter Name="BlankTileAddress">Resources/Images/blank-tile.png</Parameter>
+    <!-- An address for a blank tile to bounce an unsupported routing -->
+    <Parameter Name="BingMapBaseUrl">http://virtualearth.net</Parameter>
+    <!-- An address for a local proxy -->
+    <Parameter Name="ProxyAddress">GCXNATIVEAPPLOCALSERVER</Parameter>
+    <!-- A path for the tile resource -->
+    <Parameter Name="TilePath">/tile</Parameter>
+    <!-- A key that indicates no feature has returned -->
+    <Parameter Name="NoFeaturesKey">__no_features</Parameter>
+    <!-- A list of layer operations that will be blocked -->
+    <Parameter Name="LayerOperations">query</Parameter>
+    <!-- An error message for blocked endpoints -->
+    <Parameter Name="EndPointError">
+      {
+      error : {
+      code : 400,
+      message : 'This resource is not available offline.',
+      details : []
+      }
+      }
+    </Parameter>
+    <!-- A placeholder feature to avoid interruption during offline life cycle -->
+    <Parameter Name="PlaceHolderFeature">{ objectIdFieldName:'OBJECTID', globalIdFieldName: 'GlobalID', features:[]}</Parameter>
+    <!-- An empty result set -->
+    <Parameter Name="ZeroSearchResults">{ count: 0, features: [], ResponseStatus: {} }</Parameter>
+    <!-- An empty attribution response -->
+    <Parameter Name="EmptyAttributionResponse">{}</Parameter>
+  </ParameterList>
+</ManifestParameters>

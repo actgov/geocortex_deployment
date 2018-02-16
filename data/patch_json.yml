@@ -1,0 +1,12 @@
+# Add the location for the desktop.json.js config below. This will be used by the deployment script
+# to update with environment specific settings.
+viewer_configs: 
+ landcust: Viewers/lc/VirtualDirectory/Resources/Config/Default/Desktop.json.js
+
+# JSON patch definitions to update in the viewer configuration (defined above)
+patches:
+ -
+  op: replace
+  path: configuration.application.geometryServiceUrl
+  pattern: http://dev-data.actmapi.act.gov.au/arcgis/rest/services/Utilities/Geometry/GeometryServer
+  replacement: http://data.actmapi.act.gov.au/arcgis/rest/services/Utilities/Geometry/GeometryServer

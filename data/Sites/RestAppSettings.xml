@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RestAppSettings AccessLogLevel="Info" SiteThumbnailsGenerated="true" SystemLogLevel="Warn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\RestAppSettings.xsd">
+  <Cors>
+    <AllowHeaders>
+      <Header Name="Content-Type" />
+      <Header Name="X-Requested-With" />
+    </AllowHeaders>
+    <AllowMethods>
+      <Method Name="GET" />
+      <Method Name="POST" />
+      <Method Name="HEAD" />
+      <Method Name="OPTIONS" />
+    </AllowMethods>
+    <AllowOrigins>
+      <Origin Url="http://127.0.0.1:8181" />
+    </AllowOrigins>
+  </Cors>
+  <ServiceConnections>
+    <ArcGisPortal EnableLayerSearch="false" EnableUserSearch="true" ID="0" PasswordEncrypted="false" Url="https://www.arcgis.com/sharing/rest" UseHttpAuthentication="false" />
+    <ArcGisServer EnableLayerSearch="false" EnableUserSearch="true" ID="1" PasswordEncrypted="false" Url="http://services.arcgisonline.com/arcgis/rest/services" UseHttpAuthentication="false" />
+    <WebTiledLayer Copyright="© &lt;a href=&quot;http://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;OpenStreetMap&lt;/a&gt; contributors" DisplayName="Open Street Map" EnableLayerSearch="false" EnableUserSearch="true" ID="2" PasswordEncrypted="false" SubDomains="a,b,c" Url="http://{subDomain}.tile.openstreetmap.org/{level}/{col}/{row}.png" UseHttpAuthentication="false" />
+    <WebTiledLayer Copyright="© &lt;a href=&quot;http://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;OpenStreetMap&lt;/a&gt; contributors" DisplayName="Open Cycle Map" EnableLayerSearch="false" EnableUserSearch="true" ID="3" PasswordEncrypted="false" SubDomains="a,b,c" Url="http://{subDomain}.tile.opencyclemap.org/cycle/{level}/{col}/{row}.png" UseHttpAuthentication="false" />
+    <WebTiledLayer Copyright="© &lt;a href=&quot;http://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;OpenStreetMap&lt;/a&gt; contributors" DisplayName="Open Cycle Map Transport (experimental)" EnableLayerSearch="false" EnableUserSearch="true" ID="4" PasswordEncrypted="false" SubDomains="a,b,c" Url="http://{subDomain}.tile.opencyclemap.org/transport/{level}/{col}/{row}.png" UseHttpAuthentication="false" />
+    <WebTiledLayer Copyright="©2013 MapQuest - Portions ©2013 NAVTEQ &lt;a href=&quot;http://info.mapquest.com/mapquest-terms-of-use-ca-en/&quot; target=&quot;_blank&quot;&gt;Terms&lt;/a&gt;" DisplayName="MapQuest" EnableLayerSearch="false" EnableUserSearch="true" ID="5" PasswordEncrypted="false" SubDomains="otile1,otile2,otile3,otile4" Url="http://{subDomain}.mqcdn.com/tiles/1.0.0/osm/{level}/{col}/{row}.png" UseHttpAuthentication="false" />
+    <WebTiledLayer Copyright="©2013 MapQuest - Portions ©2013 NAVTEQ &lt;a href=&quot;http://info.mapquest.com/mapquest-terms-of-use-ca-en/&quot; target=&quot;_blank&quot;&gt;Terms&lt;/a&gt;" DisplayName="MapQuest Aerial" EnableLayerSearch="false" EnableUserSearch="true" ID="6" PasswordEncrypted="false" SubDomains="otile1,otile2,otile3,otile4" Url="http://{subDomain}.mqcdn.com/tiles/1.0.0/sat/{level}/{col}/{row}.png" UseHttpAuthentication="false" />
+    <ArcGisServer DisplayName="ACTmapi" EnableLayerSearch="false" EnableUserSearch="false" ID="7" PasswordEncrypted="false" Url="http://data.actmapi.act.gov.au/arcgis/rest/services/actmapi" UseHttpAuthentication="false" />
+  </ServiceConnections>
+  <Modules></Modules>
+</RestAppSettings>

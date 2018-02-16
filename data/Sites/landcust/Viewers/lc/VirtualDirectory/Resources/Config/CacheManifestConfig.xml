@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CacheManifestConfig>
+  <Tokens>
+    <!-- Note: The "ViewerBaseUrl" token will be injected by manager. -->
+    <Token Key="EsriJSAPIVersion" Value="3.13"></Token>
+    <Token Key="EsriJSAPILocation" Value="{RelativeProtocol}//js.arcgis.com"></Token>
+
+    <Token Key="jQueryVersion" Value="1.8"></Token>
+  </Tokens>
+
+  <!-- Resources which should be cached -->
+  <Cache>
+
+    <!-- Base Template from IIS -->
+    <Include Path="{ViewerBaseUrl}favicon.ico" />
+
+    <Include Path="{ViewerBaseUrl}Index.html" />
+    <Include Path="{ViewerBaseUrl}Tablet.html" />
+    <Include Path="{ViewerBaseUrl}Handheld.html" />
+
+    <Include Path="{ViewerBaseUrl}Resources/Compiled/Essentials.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Compiled/Framework.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Compiled/Framework.UI.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Compiled/Mapping.Infrastructure.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Compiled/Charting.Infrastructure.js" />
+
+    <Include Path="{ViewerBaseUrl}Resources/Locales/Framework.UI.en-US.json.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Locales/Mapping.en-US.json.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Locales/Mapping.Charting.en-US.json.js" />
+
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/hammer.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/bluebird.min.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/jquery.ui.custom.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/jquery.ui.touch-punch.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/jquery-ui-timepicker-addon.min.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/modernizr.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/fastclick.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/esri-sup.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/native.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/iso8601.min.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/remarkable.min.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/Bridge.js" />
+
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Custom/Desktop.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Custom/Handheld.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Custom/Tablet.css" />
+
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Animations.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Common.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Desktop.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Handheld.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/IE.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/IE-small.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Tablet.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/jquery.ui.custom.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/SmallShell.css" />
+
+    <!-- Virtual Directory - Images (General) -->
+    <Include Path="Resources/Images/*.png" />
+    <Include Path="Resources/Images/*.gif" />
+    <Include Path="Resources/Images/*.jpg" />
+
+    <!-- Virtual Directory - Images (Iconography) -->
+    <Include Path="Resources/Images/Icons/*.png" />
+
+    <!-- Virtual Directory - Core libs -->
+    <Include Path="Resources/Compiled/**/*.js" />
+
+    <!-- Virtual Directory - Config -->
+    <Include Path="Resources/Config/**/*.js" />
+
+    <!-- Virtual Directory - Local scripts -->
+    <Include Path="Resources/Scripts/**/*.js" />
+
+    <!-- Virtual Directory - Styles -->
+    <Include Path="Resources/Styles/**/*.css" />
+
+
+    <!-- Virtual Directory - Misc -->
+    <Include Path="*.html" />
+    <Include Path="favicon.ico" />
+
+    <!-- jQuery -->
+    <Include Path="{RelativeProtocol}//ajax.googleapis.com/ajax/libs/jquery/{jQueryVersion}/jquery.min.js" />
+
+    <!-- DatePicker -->
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-bg_flat_10_000000_40x100.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-bg_glass_65_ffffff_1x400.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-icons_222222_256x240.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-icons_228ef1_256x240.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-icons_ef8c08_256x240.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-icons_ffd27a_256x240.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Datepicker/ui-icons_ffffff_256x240.png" />
+
+    <!-- ESRI JSAPI CSS -->
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/esri/css/esri.css" />
+
+    <!-- ESRI JSAPI Scripts -->
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/init.js" />
+
+    <!-- Misc AGS JSAPI resources -->
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/esri/layers/GeoRSSLayer.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/esri/layers/KMLLayer.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/esri/nls/jsapi_en-us.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/esri/nls/jsapi.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/dojox/gfx/svg.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/dojo/resources/blank.gif" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/esri/dijit/images/ajax-loader.gif" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/esri/dijit/images/popup.png" />
+
+    <!-- Resources - Images (General) -->
+    <Include Path="{ViewerBaseUrl}Resources/Images/Banners/default-banner-bg.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Banners/default-banner.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/banner-background.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/banner-logo.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/blank-tile.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/body-bg.gif" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/header-background.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/loader-small.gif" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/map-callout-pointer.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/paging-control-sprite-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/paging-control-sprite-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/ParcelByID.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/ParcelByOwner.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/ParcelByValue.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/SearchSchools.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/splash-logo.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Backgrounds/map-bg-texture.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Backgrounds/debut_light.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/bing-logo-70x40.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/bing-logo-90x50.png" />
+
+    <!-- Resources - Images (Iconography) -->
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/add-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/add-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-down-small-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-down-small-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-down-white.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-left-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-right-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-right-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-right-alt-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-sort-small-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-up-small-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-bottom-right-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-top-left-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/basemap-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/bookmark-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/charting-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/check-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/check-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/chevron-down-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/chevron-left-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/chevron-left-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/chevron-right-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/chevron-right-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/chevron-up-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/close-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/coordinates-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/delete-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/details-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/charting-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/clear-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/connection-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/connection-off-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/connection-on-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/contact-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/attach-file-photo-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/details-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-point-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/download-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/download-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-circle-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-ellipse-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-extent-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-freehand-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-multipoint-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-point-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-polygon-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-polygon-freehand-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-polyline-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-rectangle-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-text-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/edit-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/data-edit-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/data-edit-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/edit-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/edit-log.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/edit.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/error-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/error-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/error-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/expander-closed-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/expander-open-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/file-add-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/file-clear-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/edit-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/edit-log-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/file-edit-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/file-multi-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/filter-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate-active-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate-crosshair.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate-position-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate-follow-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate-follow-active-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate-track-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate-track-active-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/globe-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/home-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/house-number-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/house-number-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/house-owner-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/house-owner-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/house-value-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/house-value-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/school-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/icon-blank-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/identify-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/identify-freehand-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/identify-polygon-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/identify-polyline-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/identify-rectangle-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/iwt-default-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/layer-actions-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layer-manage.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/layers-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/layers-extract-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layerlist-extract-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/layers-menu-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layerlist-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layerlist.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/zoom-full-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/zoom-initial-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/location-direction-blue-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/location-direction-green-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/location-direction-purple-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/location-direction-red-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/location-direction-yellow-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/lock-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-nav-zoom-in-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-nav-zoom-out-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-nav-initial-extent-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-default-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-sync-off-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-sync-on-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/menu-hoisted-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/map-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/map-3rd-party-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/pan-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/panel-close.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/attach-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/print-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/share-map-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/results.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/menu-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/panel-more-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/scroll-drag-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/paging-control-list-44.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/paging-control-table-44.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/paging-control-first-44.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/paging-control-previous-44.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/paging-control-next-44.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/paging-control-last-44.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/paging-control-table-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/query-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/search-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/search-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/search-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/search-results-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/search-results-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/search-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/share-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/stop-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/sync-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/sync-manage-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/template-picker-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/tools-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/trash-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/trash-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-closed-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-closed-light-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-open-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-open-light-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-closed-layer-visible-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-closed-layer-invisible-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-invisible-layer-visible.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-invisible-layer-invisible.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-open-layer-visible-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-open-layer-invisible-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/legend-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/list-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/workflow-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/window-new-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/window-dock-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/workflow.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/workflow-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/zoom-in.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/zoom-in-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/zoom-initial-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/zoom-out.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/zoom-out-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/zoom-previous-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/zoom-next-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/IconPlaceholder24x24.png" />
+
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/measure-distance-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/measure-area-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/measure-rectangle-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/measure-polygon-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/measure-freehand-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/measure-polyline-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/measure-polygon-freehand-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/measure-circle-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/erase-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/erase-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/clear-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/styles-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/Toolbar/draw-edit-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/minus-24.png" />
+
+    <!-- Resources - Images (iOS) -->
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon-144x144.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon-114x114.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon-72x72.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon-ipad-retina.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon-ipad.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon-iphone-retina.png" />
+
+    <!-- Resources - Images (Pushpins) -->
+    <Include Path="{ViewerBaseUrl}Resources/Images/Pushpins/map-marker-blue-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Pushpins/map-marker-green-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Pushpins/map-marker-purple-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Pushpins/map-marker-red-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Pushpins/map-marker-yellow-32.png" />
+    
+    <!-- Resources - Images (Sharing) -->
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/facebook-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/google-plus-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/linkedin-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/twitter-24.png" />
+  </Cache>
+
+  <!-- Resources which should not/can not be cached -->
+  <Network>
+  </Network>
+
+  <OfflineFallbacks>
+    <Fallback UrlPattern="online.js" FallbackResource="offline.js" />
+  </OfflineFallbacks>
+
+</CacheManifestConfig>

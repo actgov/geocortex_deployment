@@ -1,0 +1,8 @@
+Every Geocortex Essentials instance contains a Virtual Directory explicitly named "VirtualDirectory". Static content
+in this directory can be accessed via HTTP. For example, if this is the default Geocortex Essentials instance on 
+this server, then content in this Virtual Directory could be accessed using the following URL syntax:
+
+http://<Host>/Geocortex/Essentials/REST/VirtualDirectory/
+
+This directory can also be referenced in Site configuration files (Site.xml files) using the replacement token syntax:
+{RestVirtualDirectoryUrl}. At runtime, this replacement token will be expanded to a URL similar to the one shown above.
